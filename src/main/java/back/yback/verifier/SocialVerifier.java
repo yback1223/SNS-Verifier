@@ -1,7 +1,7 @@
-package org.example.verifier;
+package back.yback.verifier;
 
-import org.example.common.AuthProvider;
-import org.example.dto.AuthUserDto;
+import back.yback.common.AuthProvider;
+import back.yback.dto.AuthUserDto;
 
 public interface SocialVerifier {
 	boolean support(AuthProvider provider);

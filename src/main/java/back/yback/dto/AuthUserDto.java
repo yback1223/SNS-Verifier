@@ -1,6 +1,6 @@
-package org.example.dto;
+package back.yback.dto;
 
-import org.example.common.AuthProvider;
+import back.yback.common.AuthProvider;
 
 import java.util.Map;
 

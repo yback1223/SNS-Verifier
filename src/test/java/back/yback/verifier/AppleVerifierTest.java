@@ -1,9 +1,9 @@
-package org.example.verifier;
+package back.yback.verifier;
 
 import io.jsonwebtoken.Jwts;
-import org.example.common.AuthProvider;
-import org.example.dto.AuthUserDto;
-import org.example.utils.AppleUtils;
+import back.yback.common.AuthProvider;
+import back.yback.dto.AuthUserDto;
+import back.yback.utils.AppleUtils;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

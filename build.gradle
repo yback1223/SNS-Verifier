@@ -1,10 +1,4 @@
-plugins {
-    id 'java'
-    id 'org.springframework.boot' version '3.5.8'
-    id 'io.spring.dependency-management' version '1.1.7'
-}
-
-group = 'org.example'
+group = 'back.yback'
 version = '1.0-SNAPSHOT'
 
 java {
@@ -12,6 +6,33 @@ java {
         languageVersion = JavaLanguageVersion.of(17)
     }
 }
+
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.5.8'
+    id 'io.spring.dependency-management' version '1.1.7'
+    id 'maven-publish'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            name = "GitHubPackages"
+            url = uri("https://maven.pkg.github.com/yback1223/SNS-Verifier")
+            credentials {
+                username = "yback1223"
+                password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+    }
+}
+
+
 
 repositories {
     mavenCentral()
@@ -37,4 +58,21 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+    archiveClassifier = ''
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
 }

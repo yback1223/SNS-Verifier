@@ -1,8 +1,8 @@
-package org.example.utils;
+package back.yback.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.example.common.AuthException;
+import back.yback.common.AuthException;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 

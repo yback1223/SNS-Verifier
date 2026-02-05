@@ -1,4 +1,4 @@
-package org.example.common;
+package back.yback.common;
 
 public class AuthException extends RuntimeException {
 	public AuthException(String message) {

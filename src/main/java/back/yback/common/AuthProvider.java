@@ -1,4 +1,4 @@
-package org.example.common;
+package back.yback.common;
 
 public enum AuthProvider {
 	GOOGLE,

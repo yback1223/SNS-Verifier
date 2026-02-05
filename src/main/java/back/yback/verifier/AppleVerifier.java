@@ -1,14 +1,12 @@
-package org.example.verifier;
+package back.yback.verifier;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference; // [추가] 타입 안전성 위해 필요
-import com.fasterxml.jackson.databind.JsonMappingException;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import org.example.common.AuthException;
-import org.example.common.AuthProvider;
-import org.example.dto.AuthUserDto;
-import org.example.utils.AppleUtils;
+import back.yback.common.AuthException;
+import back.yback.common.AuthProvider;
+import back.yback.dto.AuthUserDto;
+import back.yback.utils.AppleUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.annotation.Value;
 import com.fasterxml.jackson.databind.ObjectMapper; // JSON 파싱용

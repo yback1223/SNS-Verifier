@@ -1,10 +1,10 @@
-package org.example.manager;
+package back.yback.manager;
 
 import lombok.RequiredArgsConstructor;
-import org.example.common.AuthException;
-import org.example.common.AuthProvider;
-import org.example.dto.AuthUserDto;
-import org.example.verifier.SocialVerifier;
+import back.yback.common.AuthException;
+import back.yback.common.AuthProvider;
+import back.yback.dto.AuthUserDto;
+import back.yback.verifier.SocialVerifier;
 import org.springframework.stereotype.Component;
 import java.util.List;
 
